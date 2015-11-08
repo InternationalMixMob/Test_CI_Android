@@ -1,29 +1,23 @@
 language: android
-
+jdk: oraclejdk7
 android:
   components:
-    # Uncomment the lines below if you want to
-    # use the latest revision of Android SDK Tools
-    #- platform-tools
-    #- tools
-
-    # The BuildTools version used by your project
     - build-tools-21.1.1
-
-    # The SDK version used to compile your project
     - android-21
-
-    #System images
     - sys-img-armeabi-v7a-android-21
-
     - add-on
     - extra
 
-    #licenses:
-    #- 'android-sdk-preview-license-52d11cd2'
-    #- 'android-sdk-license-.+'
-    #- 'google-gdk-license-.+'
+global:
+before_install:
+# Commands to excecute before install
+- echo "Before install stage"
+
+install:
+  - sudo npm install -g cordova
+
+
 
 scripts:
-	- cd TestCIAndroid
-	- cordova build android
+    - cd TestCIAndroid
+    - cordova build android
