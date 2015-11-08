@@ -18,7 +18,7 @@ before_install:
   - nvm use 4.1.1
 
 install:
-  - npm install -g cordova
+  - npm install cordova
 
 
 
