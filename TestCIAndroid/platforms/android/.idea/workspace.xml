@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10dc22e9-5422-490c-af40-3e6745597224" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CordovaLib/CordovaLib.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.travis.yml" afterPath="$PROJECT_DIR$/../../../.travis.yml" />
     </list>
     <ignored path="android.iws" />
     <ignored path=".idea/workspace.xml" />
