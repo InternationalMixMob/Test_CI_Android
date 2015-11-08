@@ -21,15 +21,18 @@ before_install:
 install:
   - echo "Install stage"
   - npm install cordova
-  - cd TestCIAndroid
-  - cordova build 
-  - cd platforms/android/
   - echo "END - install stage"
 
+before_scripts:
+  - echo "Before Scripts stage"
+  - cd TestCIAndroid
+  - cordova prepare
+  - cd platforms/android/
 
 scripts:
   - echo "Scripts stage"
   - pwd
+  - ./gradlew build connectedCheck
   - echo "END Scripts stage"
 
 
