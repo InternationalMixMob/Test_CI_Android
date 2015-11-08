@@ -1,5 +1,7 @@
 language: android
 jdk: oraclejdk7
+node_js: "0.12"
+
 android:
   components:
     - build-tools-21.1.1
@@ -14,8 +16,8 @@ before_install:
 - echo "Before install stage"
 
 install:
-  - curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-  - sudo apt-get install -y nodejs
+#  - curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+#  - sudo apt-get install -y nodejs
   - sudo npm install -g cordova
 
 
