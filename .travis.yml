@@ -21,7 +21,6 @@ android:
     - 'android-sdk-license-.+'
     - 'google-gdk-license-.+'
 
-
 scripts:
 	- cd TestCIAndroid
 	- cordova build android
