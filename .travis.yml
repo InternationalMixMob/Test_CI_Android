@@ -29,3 +29,5 @@ scripts:
     - cd TestCIAndroid
     - cordova build android
   - echo "END Scripts stage"
+
+
