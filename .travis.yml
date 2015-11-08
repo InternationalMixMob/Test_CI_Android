@@ -1,6 +1,6 @@
 language: android
 jdk: oraclejdk7
-node_js: "4.1"
+node_js: "4.1.1"
 
 android:
   components:
@@ -12,13 +12,12 @@ android:
 
 global:
 before_install:
-# Commands to excecute before install
-- echo "Before install stage"
+  # Commands to excecute before install
+  - echo "Before install stage"
+  - nvm install 4.1.1
+  - nvm use 4.1.1
 
 install:
-#  - curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-#  - sudo apt-get install -y nodejs
-  - nvm use v4.1
   - npm install -g cordova
 
 
