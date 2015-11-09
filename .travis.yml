@@ -1,36 +1,45 @@
 language: android
 jdk: oraclejdk8
-node_js: "4.1.1"
 
 android:
   components:
     - build-tools-22.0.1
     - android-22
     - sys-img-armeabi-v7a-android-22
-    - add-on
-    - extra
 
+env:
 global:
 before_install:
-  # Commands to excecute before install
+# Commands to excecute before install
   - echo "Before install stage"
   - nvm install 4.1.1
   - nvm use 4.1.1
-  - npm install cordova
   - echo "END - Before install stage"
 
 install:
   - echo "Install stage"
-  - cd TestCIAndroid
-  - cordova prepare
-  - cd platforms/android/
-  - pwd
+  - npm i
   - echo "END - install stage"
 
-#scripts:
-#  - echo "Scripts stage"
-#  - pwd
-#  - ./gradlew build connectedCheck
-#  - echo "END Scripts stage"
+before_script:
+# Commands to excecute before running tests
+  - echo "Before script stagea
 
+script:
+# Run tests
+  - echo "Running tests"
+  - npm test
+  - echo "Starting build"
+  - npm run build
 
+after_success:
+# You can do thing after success
+  - echo "Build success"
+
+after_failure:
+# What if your test fails?
+  - echo "After failure stage"
+
+after_script:
+# Do things anyway after script/test pass or not
+  - echo "After script stage"

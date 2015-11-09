@@ -25,3 +25,12 @@ proguard/
 
 # Log Files
 *.log
+
+# Node Modules
+node_modules/
+
+# Mac Files
+.DS_Store
+
+# Swap Files
+*.swp

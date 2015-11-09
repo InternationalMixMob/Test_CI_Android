@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">=4.x.x"
+  },
+"scripts" : {
+  "test" : "./node_modules/.bin/gulp -v",
+  "build" : "cd TestCIAndroid && ../node_modules/.bin/cordova build android && cd .."
+  },
+"devDependencies": {
+    "cordova": "5.4.0",
+    "gulp": "^3.8.11",
+    "bower": "^1.5.3"
+  }
+}
