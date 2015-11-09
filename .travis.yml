@@ -23,7 +23,7 @@ install:
 
 before_script:
 # Commands to excecute before running tests
-  - echo "Before script stagea
+  - echo "Before script stage"
 
 script:
 # Run tests
